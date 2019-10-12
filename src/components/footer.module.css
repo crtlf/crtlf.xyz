@@ -1,0 +1,26 @@
+.footer {
+    flex-shrink: 0;
+    margin: 2em 5em;
+}
+
+.list {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex: 1 0 auto;
+    justify-content: flex-start;
+}
+.list li {
+    color: rgba(0, 0, 0, .3);
+    font-size: 14px;
+    margin-right: 5em;
+}
+.list li:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .footer {
+        display: none;
+    }
+}
