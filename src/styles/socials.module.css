@@ -1,0 +1,17 @@
+.socials > * {
+    display: inline;
+}
+
+.socials ul::before {
+    content: " ";
+}
+
+.socials ul li {
+    display: inline;
+}
+.socials ul li:not(:nth-last-child(-n + 2))::after {
+    content: ", ";
+}
+.socials ul li:nth-last-child(2)::after {
+    content: " and ";
+}

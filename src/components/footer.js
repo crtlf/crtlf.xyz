@@ -1,7 +1,7 @@
 import React from "react"
-import footerStyles from "./footer.module.css"
+import footerStyles from "../styles/footer.module.css"
 
-export default () => (
+const FooterComponent = () => (
     <div className={footerStyles.footer}>
         <ul className={footerStyles.list}>
             <li>corentin le fur</li>
@@ -10,3 +10,5 @@ export default () => (
         </ul>
     </div>
 )
+
+export default FooterComponent
