@@ -33,6 +33,8 @@ module.exports = {
         ]
     },
     plugins: [
+        `gatsby-plugin-offline`,
+        `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-plugin-web-font-loader`,
             options: {
@@ -44,8 +46,5 @@ module.exports = {
                 },
             },
         },
-        {
-            resolve: `gatsby-plugin-offline`
-        }
     ]
 }

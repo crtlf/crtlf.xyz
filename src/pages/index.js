@@ -1,16 +1,13 @@
 import React from "react"
+import Layout from "../components/layout"
 import Hero from "../components/hero"
 import Footer from "../components/footer"
 
 const IndexPage = () => (
-    <div style={{
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column'
-    }}>
+    <Layout>
         <Hero />
         <Footer />
-    </div>
+    </Layout>
 )
 
 export default IndexPage;
