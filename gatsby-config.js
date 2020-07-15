@@ -34,20 +34,14 @@ module.exports = {
     },
     plugins: [
         {
-            resolve: `gatsby-plugin-prefetch-google-fonts`,
+            resolve: `gatsby-plugin-web-font-loader`,
             options: {
-                fonts: [
-                    {
-                        family: `Exo 2`,
-                        subsets: [`latin`],
-                        variants: [`600`, `700`]
-                    },
-                    {
-                        family: `Roboto Slab`,
-                        subsets: [`latin`],
-                        variants: [`400`, `700`]
-                    },
-                ],
+                google: {
+                    families: [
+                        'Exo 2:600,700',
+                        'Roboto Slab:400,700',
+                    ],
+                },
             },
         }
     ]
