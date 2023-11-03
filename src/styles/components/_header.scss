@@ -9,6 +9,18 @@
   padding-top: 10vh;
 }
 
+@keyframes glowing-indicator {
+  0% {
+    box-shadow: 0 0 5px 0 rgba(#47cf47, .5);
+  }
+  50% {
+    box-shadow: 0 0 5px 4px rgba(#47cf47, .5);
+  }
+  100% {
+    box-shadow: 0 0 5px 0 rgba(#47cf47, .5);
+  }
+}
+
 .disponibility {
   align-items: center;
   background-color: rgba($dark, .1);
@@ -26,6 +38,7 @@
     display: block;
     height: 10px;
     width: 10px;
+    animation: glowing-indicator 2s infinite;
   }
 }
 
