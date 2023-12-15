@@ -7,7 +7,7 @@ import Footer from "../components/Footer"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main>
+    <main id="top">
       <Header/>
       <ProjectList/>
       <Contact/>

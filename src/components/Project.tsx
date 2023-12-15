@@ -19,9 +19,9 @@ interface ProjectPictureProps {
 const Project = ({name, startDate, endDate, introduction, pictures, url, domain}: ProjectProps) => {
   return (
     <div className="project">
-      <h2>{name}</h2>
-      <p className="project__infos">{startDate} — {endDate}</p>
-      <p>{introduction}</p>
+      <h2 data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease" data-sal-duration="500">{name}</h2>
+      <p className="project__infos" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease" data-sal-duration="500">{startDate} — {endDate}</p>
+      <p data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease" data-sal-duration="500">{introduction}</p>
       <div className="project__pictures">
         {pictures && pictures.map((image, index) => (
           <ProjectPicture key={index} image={image} />

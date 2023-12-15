@@ -3,7 +3,7 @@ import Project from './Project'
 
 const ProjectList: React.FC = () => {
   return (
-    <section className="project-list">
+    <section id="projects" className="project-list">
       <Project
         name="Paysan Breton"
         startDate="2017"

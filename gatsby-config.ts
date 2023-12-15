@@ -15,6 +15,7 @@ const config: GatsbyConfig = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-scroll-reveal-with-new-react`,
   ]
 };
 

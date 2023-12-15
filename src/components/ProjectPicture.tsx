@@ -11,7 +11,7 @@ interface ProjectPictureProps {
 
 const ProjectPicture = ({image}: ProjectPictureProps) => {
   return (
-    <div className="project__picture">
+    <div className="project__picture" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease" data-sal-duration="500">
       <img src={image.url} alt={image.alt} />
     </div>
   )
