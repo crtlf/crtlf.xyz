@@ -13,7 +13,7 @@ const Header: React.FC = () => {
         Disponible pour de nouvelles opportunités
       </div>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam reiciendis fuga, ratione est et blanditiis libero beatae at. Eveniet voluptatem mollitia consequatur quasi iusto ipsum assumenda libero deleniti repudiandae!</p>
+      <p className='header__intro'>Avec plus de 10 ans d'expérience, je suis votre partenaire de confiance pour le développement de sites web, le référencement et la maintenance, transformant vos idées en solutions numériques.</p>
 
       <div className="scroll-down">
         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">

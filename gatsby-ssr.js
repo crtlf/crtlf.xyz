@@ -68,7 +68,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       rel="preload"
-      href="/fonts/EudoxusSans/EudoxusSansCondensed-Bold.woff2"
+      href="/fonts/EudoxusSans/EudoxusSans-Bold.woff2"
       as="font"
       type="font/woff2"
       crossOrigin="anonymous"
@@ -76,7 +76,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       rel="preload"
-      href="/fonts/EudoxusSans/EudoxusSansCondensed-Medium.woff2"
+      href="/fonts/EudoxusSans/EudoxusSans-Medium.woff2"
       as="font"
       type="font/woff2"
       crossOrigin="anonymous"
@@ -84,7 +84,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
     />,
     <link
       rel="preload"
-      href="/fonts/EudoxusSans/EudoxusSansCondensed-Regular.woff2"
+      href="/fonts/EudoxusSans/EudoxusSans-Regular.woff2"
       as="font"
       type="font/woff2"
       crossOrigin="anonymous"

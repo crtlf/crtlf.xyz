@@ -1,0 +1,36 @@
+.contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: flex-start;
+  margin-bottom: 280px;
+  margin-top: 280px;
+  text-align: center;
+
+  &__title {
+    font-size: 70px;
+    font-weight: 500;
+  }
+
+  &__text {
+    max-width: 700px;
+  }
+
+  &__link {
+    align-items: center;
+    background: #ececec;
+    border-radius: 23px;
+    color: #6e6e6e;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    padding: 8px 24px;
+    text-decoration: none;
+
+    svg {
+      fill: #6e6e6e;
+    }
+  }
+}
