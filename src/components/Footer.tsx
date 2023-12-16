@@ -4,17 +4,17 @@ const Footer: React.FC = () => {
   return (
     <footer>
       <div>
-        @2023 - Corentin Le Fur
+        @2023 — Corentin Le Fur
       </div>
       <ul>
         <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+          <a href="https://twitter.com/CorentinLf" target="_blank" rel="noopener noreferrer">Twitter / X</a>
         </li>
         <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">Linkedin</a>
+          <a href="https://www.linkedin.com/in/crtlf" target="_blank" rel="noopener noreferrer">Linkedin</a>
         </li>
         <li>
-          <a href="http://" target="_blank" rel="noopener noreferrer">Malt</a>
+          <a href="https://www.malt.fr/profile/corentinlefur" target="_blank" rel="noopener noreferrer">Malt</a>
         </li>
       </ul>
       <a href="#top" className='back-to-top'>

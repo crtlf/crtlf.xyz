@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const Contact: React.FC = () => {
   return (
-    <div className='contact'>
+    <div className='contact' id="contact">
       <h2 className='contact__title'>Travaillons ensemble</h2>
       <p className='contact__text'>
         Vous avez une idée que vous souhaitez concrétiser ?

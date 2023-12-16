@@ -9,12 +9,12 @@
   text-align: center;
 
   &__title {
-    font-size: 70px;
-    font-weight: 500;
+    @extend %h1;
   }
 
   &__text {
     max-width: 700px;
+    text-wrap: pretty;
   }
 
   &__link {

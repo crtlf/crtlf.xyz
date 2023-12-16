@@ -49,15 +49,15 @@
     border-radius: 24px;
     bottom: 20px;
     color: $light;
-    font-size: 20px;
+    font-variant: all-small-caps;
     font-weight: 500;
     left: 0;
     padding: 5px 36px 10px;
     position: sticky;
     right: 0;
+    text-align: center;
     text-decoration: none;
     word-spacing: 8px;
-    font-variant: all-small-caps;
 
     &__url {
       color: rgba($light, .65);
