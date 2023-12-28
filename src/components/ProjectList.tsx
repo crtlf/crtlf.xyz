@@ -12,7 +12,8 @@ const ProjectList: React.FC = () => {
         pictures={[
           {
             url: "images/paysanbreton-1.png",
-            alt: "Paysan Breton - 1"
+            alt: "Paysan Breton - 1",
+            copyright: true
           },
           {
             url: "images/paysanbreton-2.png",
@@ -35,7 +36,8 @@ const ProjectList: React.FC = () => {
         pictures={[
           {
             url: "images/foretbois-1.png",
-            alt: "Forêt Bois - 1"
+            alt: "Forêt Bois - 1",
+            copyright: true
           },
           {
             url: "images/foretbois-2.png",
@@ -58,7 +60,8 @@ const ProjectList: React.FC = () => {
         pictures={[
           {
             url: "images/aidays-1.png",
-            alt: "AI Days - 1"
+            alt: "AI Days - 1",
+            copyright: true
           },
           {
             url: "images/aidays-2.png",
