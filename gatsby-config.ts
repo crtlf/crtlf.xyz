@@ -17,6 +17,14 @@ const config: GatsbyConfig = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-scroll-reveal-with-new-react`,
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-8E9ZET3TF4",
+        ],
+      },
+    },
   ]
 };
 
