@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 interface ImageProps {
   url: string,
@@ -18,7 +19,7 @@ const ProjectPicture = ({image, url, name}: ProjectPictureProps) => {
       <img src={image.url} alt={image.alt} />
       {
         image.copyright && (
-          <a className="project__copyright" href={url} target="_blank">© {name}</a>
+          <OutboundLink className="project__copyright" href={url} target="_blank">© {name}</OutboundLink>
         )
       }
     </div>

@@ -1,5 +1,6 @@
 import * as React from 'react'
 import ProjectPicture from './ProjectPicture'
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 interface ProjectProps {
   name: string,
@@ -27,9 +28,9 @@ const Project = ({name, startDate, endDate, introduction, pictures, url, domain}
         {pictures && pictures.map((image, index) => (
           <ProjectPicture key={index} image={image} url={url} name={name} />
         ))}
-        <a className="project__link" href={url} target="_blank" rel="noopener noreferrer">
+        <OutboundLink className="project__link" href={url} target="_blank" rel="noopener noreferrer">
           Visiter <span className='project__link__url'>{domain}</span>
-        </a>
+        </OutboundLink>
       </div>
     </div>
   )

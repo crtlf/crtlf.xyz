@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
 const Footer: React.FC = () => {
   return (
@@ -8,13 +9,31 @@ const Footer: React.FC = () => {
       </div>
       <ul>
         <li>
-          <a href="https://twitter.com/CorentinLf" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+          <OutboundLink
+            href="https://twitter.com/CorentinLf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter / X
+          </OutboundLink>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/crtlf" target="_blank" rel="noopener noreferrer">Linkedin</a>
+          <OutboundLink
+            href="https://www.linkedin.com/in/crtlf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Linkedin
+          </OutboundLink>
         </li>
         <li>
-          <a href="https://www.malt.fr/profile/corentinlefur" target="_blank" rel="noopener noreferrer">Malt</a>
+          <OutboundLink
+            href="https://www.malt.fr/profile/corentinlefur"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Malt
+          </OutboundLink>
         </li>
       </ul>
       <a href="#top" className='back-to-top'>
