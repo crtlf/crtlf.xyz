@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer>
       <div>
-        @2023 — Corentin Le Fur
+        @{(new Date().getFullYear())} — Corentin Le Fur
       </div>
       <ul>
         <li>

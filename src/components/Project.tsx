@@ -15,7 +15,7 @@ interface ProjectProps {
 interface ProjectPictureProps {
   url: string,
   alt: string,
-  copyright?: boolean
+  copyright?: string
 }
 
 const Project = ({name, startDate, endDate, introduction, pictures, url, domain}: ProjectProps) => {
@@ -26,7 +26,7 @@ const Project = ({name, startDate, endDate, introduction, pictures, url, domain}
       <p data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease" data-sal-duration="500">{introduction}</p>
       <div className="project__pictures">
         {pictures && pictures.map((image, index) => (
-          <ProjectPicture key={index} image={image} url={url} name={name} />
+          <ProjectPicture key={index} image={image} url={url} copyright={image.copyright} />
         ))}
         <OutboundLink className="project__link" href={url} target="_blank" rel="noopener noreferrer">
           Visiter <span className='project__link__url'>{domain}</span>
