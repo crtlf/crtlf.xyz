@@ -7,13 +7,13 @@ const ProjectList: React.FC = () => {
       <Project
         name="Paysan Breton"
         startDate="2017"
-        endDate="Aujourd'hui"
-        introduction="Depuis 2017, j'ai l'honneur de collaborer avec Paysan Breton, une entreprise de premier plan dans le domaine des produits laitiers. Mon parcours a débuté en tant que développeur au sein des entreprises Yellowcake, puis BeAble, contribuant à faire évoluer la plateforme Drupal au fil des années. Aujourd'hui, en tant que développeur web freelance, je continue à soutenir et à améliorer cette expérience en ligne emblématique pour Paysan Breton."
+        endDate="2024"
+        introduction="Pendant 7 ans, j'ai eu l'honneur de collaborer avec Paysan Breton, une entreprise de premier plan dans le domaine des produits laitiers. Mon parcours a débuté en tant que développeur au sein des entreprises Yellowcake, puis BeAble, contribuant à faire évoluer la plateforme Drupal au fil des années. Ensuite, en tant que développeur web freelance, j'ai continué à soutenir et à améliorer cette expérience en ligne emblématique pour Paysan Breton."
         pictures={[
           {
             url: "images/paysanbreton-1.png",
             alt: "Paysan Breton - 1",
-            copyright: true
+            copyright: "Mike & Cheese – Tous droits Paysan Breton",
           },
           {
             url: "images/paysanbreton-2.png",
@@ -37,7 +37,7 @@ const ProjectList: React.FC = () => {
           {
             url: "images/foretbois-1.png",
             alt: "Forêt Bois - 1",
-            copyright: true
+            copyright: "Forêt Bois"
           },
           {
             url: "images/foretbois-2.png",
@@ -61,7 +61,7 @@ const ProjectList: React.FC = () => {
           {
             url: "images/aidays-1.png",
             alt: "AI Days - 1",
-            copyright: true
+            copyright: "AI Days"
           },
           {
             url: "images/aidays-2.png",
