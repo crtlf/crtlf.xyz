@@ -21,7 +21,7 @@
     align-items: center;
     background: #ececec;
     border-radius: 23px;
-    color: #6e6e6e;
+    color: $dark;
     cursor: pointer;
     display: flex;
     flex-direction: row;
@@ -56,7 +56,7 @@
     }
 
     &::after {
-      background: #6e6e6e;
+      background: $dark;
       border-radius: 14px;
       color: $light;
       content: attr(data-tooltip);
@@ -70,7 +70,7 @@
     }
 
     &::before {
-      border-bottom: 5px solid #6e6e6e;
+      border-bottom: 5px solid $dark;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
       content: "";
@@ -81,7 +81,7 @@
     }
 
     svg {
-      fill: #6e6e6e;
+      fill: $dark;
     }
   }
 }
