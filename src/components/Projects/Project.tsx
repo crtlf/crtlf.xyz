@@ -1,4 +1,5 @@
 import * as React from 'react'
+import * as styles from './project.module.scss'
 import ProjectPicture from './ProjectPicture'
 import { OutboundLink } from "gatsby-plugin-google-gtag"
 
@@ -20,16 +21,16 @@ interface ProjectPictureProps {
 
 const Project = ({name, startDate, endDate, introduction, pictures, url, domain}: ProjectProps) => {
   return (
-    <div className="project">
+    <div className={styles.project}>
       <h2 data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease" data-sal-duration="500">{name}</h2>
-      <p className="project__infos" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease" data-sal-duration="500">{startDate} — {endDate}</p>
+      <p className={styles.infos} data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease" data-sal-duration="500">{startDate} — {endDate}</p>
       <p data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease" data-sal-duration="500">{introduction}</p>
-      <div className="project__pictures">
+      <div className={styles.pictures}>
         {pictures && pictures.map((image, index) => (
           <ProjectPicture key={index} image={image} url={url} copyright={image.copyright} />
         ))}
-        <OutboundLink className="project__link" href={url} target="_blank" rel="noopener noreferrer">
-          Visiter <span className='project__link__url'>{domain}</span>
+        <OutboundLink className={styles.link} href={url} target="_blank" rel="noopener noreferrer">
+          Visiter <span className={url}>{domain}</span>
         </OutboundLink>
       </div>
     </div>

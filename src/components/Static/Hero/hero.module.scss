@@ -1,4 +1,4 @@
-.header {
+.hero {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -7,27 +7,27 @@
   min-height: 80vh;
   padding-bottom: 10vh;
   padding-top: 10vh;
+}
 
-  &__intro {
-    max-width: 700px;
-  }
+.intro {
+  max-width: 700px;
 }
 
 @keyframes glowing-indicator {
   0% {
-    box-shadow: 0 0 5px 0 rgba(#47cf47, .5);
+    box-shadow: 0 0 5px 0 var(--color-glowing-green-shadow);
   }
   50% {
-    box-shadow: 0 0 5px 4px rgba(#47cf47, .5);
+    box-shadow: 0 0 5px 4px var(--color-glowing-green-shadow);
   }
   100% {
-    box-shadow: 0 0 5px 0 rgba(#47cf47, .5);
+    box-shadow: 0 0 5px 0 var(--color-glowing-green-shadow);
   }
 }
 
 .disponibility {
   align-items: center;
-  background-color: rgba($dark, .1);
+  background-color: var(--color-dark-100);
   border-radius: 20px;
   color: inherit;
   display: inline-flex;
@@ -38,19 +38,23 @@
   padding: 5px 20px;
   text-decoration: none;
 
-  &__indicator {
-    background-color: #47cf47;
-    border-radius: 50%;
-    display: block;
-    height: 10px;
-    width: 10px;
-    animation: glowing-indicator 2s infinite;
+  @media screen and (max-width: 576px) {
+    font-size: 12px;
   }
 }
 
-.scroll-down {
+.indicator {
+  background-color: var(--color-glowing-green);
+  border-radius: 50%;
+  display: block;
+  height: 10px;
+  width: 10px;
+  animation: glowing-indicator 2s infinite;
+}
+
+.scrolldown {
   margin-top: auto;
-  background: $dark;
+  background: var(--color-dark);
   height: 40px;
   width: 40px;
   display: flex;
@@ -59,6 +63,6 @@
   border-radius: 50%;
 
   svg {
-    fill: $light;
+    fill: var(--color-beige);
   }
 }

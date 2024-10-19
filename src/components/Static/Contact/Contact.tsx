@@ -1,16 +1,17 @@
 import * as React from 'react'
+import * as styles from './contact.module.scss'
 
 const Contact: React.FC = () => {
   return (
-    <div className='contact' id="contact">
-      <h2 className='contact__title'>Travaillons ensemble</h2>
-      <p className='contact__text'>
+    <div className={styles.contact} id="contact">
+      <h2 className="h1">Travaillons ensemble</h2>
+      <p className={styles.text}>
         Vous avez une idée que vous souhaitez concrétiser ?
         <br></br>Un projet pour lequel vous avez besoin d'aide ?
         <br></br>Envoyez-moi un message et je vous répondrai afin que nous puissions discuter des prochaines étapes.
       </p>
       <div
-        className='contact__link'
+        className={styles.link}
         data-tooltip="Copier"
         onClick={(e) => {
           navigator.clipboard.writeText('hello@crtlf.xyz');

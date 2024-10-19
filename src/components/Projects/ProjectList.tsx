@@ -1,9 +1,10 @@
 import * as React from 'react'
+import * as styles from './project.module.scss'
 import Project from './Project'
 
 const ProjectList: React.FC = () => {
   return (
-    <section id="projects" className="project-list">
+    <section id="projects" className={styles.list}>
       <Project
         name="Paysan Breton"
         startDate="2017"

@@ -2,7 +2,7 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `crtlf.xyz`,
+    title: `Corentin Le Fur`,
     twitterUsername: `@CorentinLf`,
     siteUrl: `https://crtlf.xyz`
   },
@@ -17,6 +17,7 @@ const config: GatsbyConfig = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-scroll-reveal-with-new-react`,
+    'gatsby-plugin-dts-css-modules',
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
